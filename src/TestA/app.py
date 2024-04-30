@@ -2,7 +2,7 @@ import sentry_sdk
 import time
 
 # Initialize Sentry with the DSN provided
-sentry_sdk.init(dsn="https://320272b8770f9a91f14e6702aec9563a@o4507172871340032.ingest.us.sentry.io/4507172872847360")
+sentry_sdk.init(dsn="https://895585edfbb9b7109ab756025ca94e96@o4507172871340032.ingest.us.sentry.io/4507177524461568")
 
 # Import additional modules for exception throwing
 import helper1
