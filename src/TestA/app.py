@@ -4,11 +4,22 @@ import time
 # Initialize Sentry with the DSN provided
 sentry_sdk.init(dsn="https://320272b8770f9a91f14e6702aec9563a@o4507172871340032.ingest.us.sentry.io/4507172872847360")
 
+# Import additional modules for exception throwing
+import helper1
+import helper2
+import helper3
+import helper4
+import helper5
+
 def throw_exception():
     while True:
         try:
-            # This line will throw an exception
-            raise Exception("This is a test exception from TestA")
+            # Call functions from helper modules that throw exceptions
+            helper1.throw_exception1()
+            helper2.throw_exception2()
+            helper3.throw_exception3()
+            helper4.throw_exception4()
+            helper5.throw_exception5()
         except Exception as e:
             # Capture the exception in Sentry
             sentry_sdk.capture_exception(e)
